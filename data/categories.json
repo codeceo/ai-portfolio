@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cat-1",
+    "name": "网站与 Web 应用",
+    "slug": "web",
+    "description": "AI 生成的网站与 Web 应用",
+    "sort_order": 1
+  },
+  {
+    "id": "cat-2",
+    "name": "效率工具",
+    "slug": "tools",
+    "description": "提升日常效率的 AI 工具",
+    "sort_order": 2
+  },
+  {
+    "id": "cat-3",
+    "name": "自动化工作流",
+    "slug": "automation",
+    "description": "可复用的自动化流程",
+    "sort_order": 3
+  },
+  {
+    "id": "cat-4",
+    "name": "视觉实验",
+    "slug": "visual",
+    "description": "AI 视频、图像与视觉实验",
+    "sort_order": 4
+  },
+  {
+    "id": "cat-5",
+    "name": "交互实验",
+    "slug": "interactive",
+    "description": "交互式实验项目",
+    "sort_order": 5
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "id": "work-1",
+    "slug": "ai-portfolio-site",
+    "title": "AI 个人作品集",
+    "summary": "可由后台表单驱动的个人作品展厅，支持发布、下架与精选。",
+    "description": "本项目本身就是一个示例：公共页只展示已发布作品，后台可新增、编辑、排序与上下架，数据层在演示模式与 Supabase 模式之间切换。",
+    "category": "web",
+    "tags": [
+      "Next.js",
+      "Supabase",
+      "作品集"
+    ],
+    "cover_image_url": "/covers/1.svg",
+    "gallery_images": [
+      "/covers/1.svg"
+    ],
+    "demo_url": "",
+    "repo_url": "",
+    "status": "published",
+    "featured": true,
+    "sort_order": 1,
+    "created_at": "2026-10-29T00:00:00.000Z",
+    "updated_at": "2026-10-29T00:00:00.000Z",
+    "highlights": []
+  },
+  {
+    "id": "work-2",
+    "slug": "prompt-workbench",
+    "title": "提示词工作台",
+    "summary": "整理、测试与复用提示词的效率工具。",
+    "description": "按分类与标签组织提示词，支持搜索与一键复制，适合日常 AI 创作。",
+    "category": "tools",
+    "tags": [
+      "效率",
+      "提示词"
+    ],
+    "cover_image_url": "/covers/2.svg",
+    "gallery_images": [
+      "/covers/2.svg"
+    ],
+    "demo_url": "",
+    "repo_url": "",
+    "status": "published",
+    "featured": true,
+    "sort_order": 2,
+    "created_at": "2026-10-29T00:00:00.000Z",
+    "updated_at": "2026-10-29T00:00:00.000Z",
+    "highlights": []
+  },
+  {
+    "id": "work-3",
+    "slug": "auto-publish-flow",
+    "title": "内容自动发布流",
+    "summary": "从草稿到多平台发布的自动化工作流。",
+    "description": "把审校、排版与发布串成一条可复用的流程，减少重复手工操作。",
+    "category": "automation",
+    "tags": [
+      "自动化",
+      "工作流"
+    ],
+    "cover_image_url": "/covers/3.svg",
+    "gallery_images": [
+      "/covers/3.svg"
+    ],
+    "demo_url": "",
+    "repo_url": "",
+    "status": "published",
+    "featured": false,
+    "sort_order": 3,
+    "created_at": "2026-10-29T00:00:00.000Z",
+    "updated_at": "2026-10-29T00:00:00.000Z",
+    "highlights": []
+  },
+  {
+    "id": "work-4",
+    "slug": "light-motion-study",
+    "title": "光影动态实验",
+    "summary": "用 AI 生成图像探索光影与动态的视觉实验。",
+    "description": "一组围绕光晕、渐变与玻璃质感的视觉实验，强调克制与留白。",
+    "category": "visual",
+    "tags": [
+      "AI 图像",
+      "视觉"
+    ],
+    "cover_image_url": "/covers/4.svg",
+    "gallery_images": [
+      "/covers/4.svg"
+    ],
+    "demo_url": "",
+    "repo_url": "",
+    "status": "published",
+    "featured": false,
+    "sort_order": 4,
+    "created_at": "2026-10-29T00:00:00.000Z",
+    "updated_at": "2026-10-29T00:00:00.000Z",
+    "highlights": []
+  },
+  {
+    "id": "work-5",
+    "slug": "glass-interaction-lab",
+    "title": "液态玻璃交互实验",
+    "summary": "可拖拽、可缩放的玻璃层交互原型。",
+    "description": "验证半透明图层在不同设备上的可读性与交互反馈。",
+    "category": "interactive",
+    "tags": [
+      "交互",
+      "Liquid Glass"
+    ],
+    "cover_image_url": "/covers/5.svg",
+    "gallery_images": [
+      "/covers/5.svg"
+    ],
+    "demo_url": "",
+    "repo_url": "",
+    "status": "draft",
+    "featured": false,
+    "sort_order": 5,
+    "created_at": "2026-10-29T00:00:00.000Z",
+    "updated_at": "2026-10-29T00:00:00.000Z",
+    "highlights": []
+  }
+]
