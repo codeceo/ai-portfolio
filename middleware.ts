@@ -10,10 +10,19 @@ import { NextResponse, type NextRequest } from 'next/server';
  */
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+  // Pass the pathname to server components as a REQUEST header.
+  // Setting it on the response (res.headers.set) does NOT reach
+  // headers() in the admin layout on hosted runtimes such as Netlify's
+  // OpenNext runtime: the layout then sees an empty path and redirects
+  // /admin/login to itself, leaving an empty <main> on the live site
+  // (verified 2026-10-30: local Next server propagated the response
+  // header, Netlify did not). Request headers are the documented way
+  // to hand data from middleware to server components.
+  const requestHeaders = new Headers(req.headers);
+  requestHeaders.set('x-admin-path', pathname);
+  const next = () => NextResponse.next({ request: { headers: requestHeaders } });
   if (pathname === '/admin/login') {
-    const res = NextResponse.next();
-    res.headers.set('x-admin-path', pathname);
-    return res;
+    return next();
   }
   if (!pathname.startsWith('/admin')) {
     return NextResponse.next();
@@ -23,9 +32,7 @@ export function middleware(req: NextRequest) {
     .getAll()
     .some((c) => c.name.startsWith('sb-') && c.name.includes('auth-token'));
   if (hasDemo || hasSupabaseSession) {
-    const res = NextResponse.next();
-    res.headers.set('x-admin-path', pathname);
-    return res;
+    return next();
   }
   const url = req.nextUrl.clone();
   url.pathname = '/admin/login';
